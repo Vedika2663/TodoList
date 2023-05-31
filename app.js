@@ -24,15 +24,7 @@ app.post("/",function(req,res){
     var item=req.body.newItem;
     items.push(item);
     res.redirect("/");
-    var checkedItem=req.body.listItem;
-    
-    for(var i=0;i<items.length;i++){
-        //var isChecked=document.getElementById("checkedItem.value");
-        if(checkedItem=="true"){
-            console.log(items[i]);
-        }
-    }
-    
+   
 })
 app.listen(3000, function(){
     console.log("running");
