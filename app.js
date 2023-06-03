@@ -8,7 +8,7 @@ const _ = require('lodash');
 const date = require(__dirname + "/date.js");
 const day = date.getDate();
 
-mongoose.connect("mongodb+srv://vedikachowdhary2003:t4fdMSk3taKyQy6R@cluster0.ko87hig.mongodb.net/");
+mongoose.connect("mongodb+srv://vedikachowdhary2003:t4fdMSk3taKyQy6R@cluster0.ko87hig.mongodb.net/todolist");
 
 const itemSchema = new mongoose.Schema({
   name: String,
